@@ -1,14 +1,16 @@
 # Personal Website
 
-A simple, responsive personal website built with plain HTML and CSS. The site is
-ready for deployment with GitHub Pages.
+A simple, responsive personal website built with plain HTML, CSS, and a small
+JavaScript helper for the FAQ-style chatbot. The site is ready for deployment
+with GitHub Pages.
 
 ## Files
 
 - `index.html` - Home page with an introduction and featured sections.
 - `about.html` - About page with background and values.
-- `contact.html` - Contact page with ways to connect.
+- `contact.html` - Contact page with ways to connect and the chatbot UI.
 - `styles.css` - Shared styles for layout, typography, and responsive behavior.
+- `script.js` - FAQ data and chatbot logic for answering questions.
 
 ## GitHub Pages
 

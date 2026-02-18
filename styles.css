@@ -32,6 +32,21 @@ img {
   display: block;
 }
 
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
 .site-header {
   background: var(--card);
   border-bottom: 1px solid var(--border);
@@ -125,6 +140,7 @@ img {
   border-radius: 999px;
   font-weight: 600;
   border: 2px solid transparent;
+  cursor: pointer;
 }
 
 .button-outline {
@@ -151,7 +167,8 @@ img {
 
 .card h2,
 .content-grid h2,
-.contact-card h2 {
+.contact-card h2,
+.chatbot h2 {
   font-size: 1.1rem;
 }
 
@@ -187,6 +204,75 @@ img {
   font-weight: 600;
 }
 
+.chatbot {
+  background: var(--card);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  display: grid;
+  gap: 1.5rem;
+}
+
+.chatbot-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.chatbot-pill {
+  background: rgba(58, 110, 165, 0.1);
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  align-self: flex-start;
+}
+
+.chatbot-window {
+  background: #f3f5f9;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  display: grid;
+  gap: 0.75rem;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.chat-message {
+  padding: 0.65rem 0.9rem;
+  border-radius: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.chat-message-user {
+  background: rgba(58, 110, 165, 0.15);
+  color: var(--text);
+  justify-self: flex-end;
+}
+
+.chat-message-bot {
+  background: white;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.chatbot-form {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.chatbot-input {
+  flex: 1 1 260px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+}
+
 .site-footer {
   text-align: center;
   padding: 2rem 1.5rem 3rem;
@@ -205,5 +291,15 @@ img {
 
   .container {
     padding-top: 2.5rem;
+  }
+
+  .chatbot-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .chatbot-form .button {
+    width: 100%;
+    text-align: center;
   }
 }

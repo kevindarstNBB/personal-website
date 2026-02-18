@@ -46,10 +46,45 @@
           </p>
         </div>
       </section>
+
+      <section class="chatbot">
+        <div class="chatbot-header">
+          <div>
+            <p class="eyebrow">Chatbot</p>
+            <h2>Ask a quick question</h2>
+            <p class="muted">
+              This lightweight helper looks through a FAQ list and responds with
+              the best match.
+            </p>
+          </div>
+          <span class="chatbot-pill">FAQ-powered</span>
+        </div>
+        <div class="chatbot-window" data-chat-output>
+          <p class="chat-message chat-message-bot">
+            Hi! Ask me about services, availability, location, or how to get in
+            touch.
+          </p>
+        </div>
+        <form class="chatbot-form" data-chat-form>
+          <label class="visually-hidden" for="chat-input">Your question</label>
+          <input
+            id="chat-input"
+            class="chatbot-input"
+            type="text"
+            name="question"
+            placeholder="Type your question..."
+            autocomplete="off"
+            data-chat-input
+          />
+          <button class="button" type="submit">Send</button>
+        </form>
+      </section>
     </main>
 
     <footer class="site-footer">
       <p>© 2024 Your Name. Built with HTML and CSS.</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
